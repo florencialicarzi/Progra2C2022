@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1661117616 source:c:\users\florencia\documents\facultad\2do\programacion\3ra cursada\clasescode\1erclase\main.c
+	<stdio.h>
+	"Fechas.h"
+
+1661116615 c:\users\florencia\documents\facultad\2do\programacion\3ra cursada\clasescode\1erclase\fechas.h
+
+1661117640 source:c:\users\florencia\documents\facultad\2do\programacion\3ra cursada\clasescode\1erclase\fechas.c
+	<stdio.h>
+	"Fechas.h"
+	<math.h>
+

@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1661178790 source:c:\users\flore\onedrive\documentos\facultad\3ra cursada\clasescode\fechasconpunteros\fechapuntero.c
+	<stdio.h>
+	<math.h>
+	<stdbool.h>
+	"FechaPuntero.h"
+
+1661177855 c:\users\flore\onedrive\documentos\facultad\3ra cursada\clasescode\fechasconpunteros\fechapuntero.h
+
+1661178839 source:c:\users\flore\onedrive\documentos\facultad\3ra cursada\clasescode\fechasconpunteros\main.c
+	<stdio.h>
+	<stdlib.h>
+	"FechaPuntero.h"
+
+1661437616 source:c:\users\florencia\documents\facultad\2do\programacion\3ra cursada\clasescode\fechasconpunteros\fechapuntero.c
+	<stdio.h>
+	<math.h>
+	<stdbool.h>
+	"FechaPuntero.h"
+
+1661487445 c:\users\florencia\documents\facultad\2do\programacion\3ra cursada\clasescode\fechasconpunteros\fechapuntero.h
+
+1661486739 source:c:\users\florencia\documents\facultad\2do\programacion\3ra cursada\clasescode\fechasconpunteros\main.c
+	<stdio.h>
+	<stdlib.h>
+	"FechaPuntero.h"
+

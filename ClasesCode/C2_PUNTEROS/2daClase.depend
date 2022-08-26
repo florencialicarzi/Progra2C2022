@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1661174982 source:c:\users\flore\onedrive\documentos\facultad\3ra cursada\clasescode\2daclase\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Punteros.h"
+
+1661174589 c:\users\flore\onedrive\documentos\facultad\3ra cursada\clasescode\2daclase\punteros.h
+
+1661174769 source:c:\users\flore\onedrive\documentos\facultad\3ra cursada\clasescode\2daclase\punteros.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	"Punteros.h"
+

@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1661470810 source:c:\users\florencia\documents\facultad\2do\programacion\3ra cursada\clasescode\menu\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Menu.h"
+
+1661470905 c:\users\florencia\documents\facultad\2do\programacion\3ra cursada\clasescode\menu\menu.h
+
+1661470916 source:c:\users\florencia\documents\facultad\2do\programacion\3ra cursada\clasescode\menu\menu.c
+	<stdio.h>
+	<string.h>
+	"Menu.h"
+
