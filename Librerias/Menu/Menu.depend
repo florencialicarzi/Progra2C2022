@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1661527200 source:c:\users\florencia\documents\facultad\2do\programacion\3racursada\librerias\menu\main.c
+	<stdio.h>
+	<string.h>
+	"Menu.h"
+
+1661527222 c:\users\florencia\documents\facultad\2do\programacion\3racursada\librerias\menu\menu.h
+
