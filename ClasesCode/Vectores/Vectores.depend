@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1661532434 source:c:\users\florencia\documents\facultad\2do\programacion\3racursada\clasescode\vectores\vectores.c
+	<stdio.h>
+
+1661532422 source:c:\users\florencia\documents\facultad\2do\programacion\3racursada\clasescode\vectores\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"../../Librerias/Menu/Menu.h"
+	"Vectores.h"
+
+1661527222 c:\users\florencia\documents\facultad\2do\programacion\3racursada\librerias\menu\menu.h
+
+1661532710 c:\users\florencia\documents\facultad\2do\programacion\3racursada\clasescode\vectores\vectores.h
+
