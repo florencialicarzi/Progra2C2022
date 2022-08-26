@@ -4,8 +4,8 @@ CLASESCODE
   - Si comienzan con CX_ entonces es un apunte de clase.
   
  TCPCODE
-  -Todos los programitas del TCP, easy
+  - Todos los programitas del TCP, easy
   
  LIBRERIAS
-  -Proyectos de StaticLibrary en C
-  -Generalmente son copias de lo que desarrolle en ClasesCode, pero que quiero usar en otro proyecto
+  - Proyectos de StaticLibrary en C
+  - Generalmente son copias de lo que desarrolle en ClasesCode, pero que quiero usar en otro proyecto
