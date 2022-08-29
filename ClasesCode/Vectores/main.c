@@ -6,9 +6,9 @@
 
 int main()
 {
-    int cant;
-    elegirCantPosiciones(&cant);
-    int vecMain[cant];
+    int tam,cantElem,posAMod,elemAMod;
+    elegirCantPosiciones(&tam);
+    int vecMain[tam];
 
     char opcion;
     do
@@ -18,16 +18,16 @@ int main()
         opcion = toupper(opcion);
         switch(opcion)
         {
-            case 'A': cargarVector(vecMain, &cant); break;
-            case 'B': insertarEnPos(); break;
-            case 'C': insertarEnOrden(); break;
-            case 'D': eliminarEnPos(); break;
-            case 'E': eliminarPrimerAparicionX(); break;
+            case 'A': cargarVector(vecMain, &tam, &cantElem); break;
+            case 'B': insertarEnPos(vecMain, &tam, &cantElem, &posAMod, &elemAMod); break;
+            case 'C': insertarEnOrden(vecMain, &tam, &cantElem,&elemAMod); break;
+            case 'D': eliminarEnPos(vecMain, &tam, &cantElem,&posAMod); break;
+            case 'E': eliminarPrimerAparicionX(vecMain, &tam, &cantElem,&elemAMod); break;
             case 'F': eliminarTodosLosX(); break;
 
         }
         system("cls");
-        mostrarVector(vecMain,&cant);
+        mostrarVector(vecMain,&tam,&cantElem);
     }while(opcion!= 'S');
 
     return 0;

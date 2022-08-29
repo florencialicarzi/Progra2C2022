@@ -13,13 +13,17 @@
 
 #define MENU_OPC "ABCDEFSabcdefs"
 
-void elegirCantPosiciones(int* cant);
-void cargarVector(int* vec, const int* cant);
-void mostrarVector(int* vec, const int* cant);
-void insertarEnPos();
-void insertarEnOrden();
-void eliminarEnPos();
-void eliminarPrimerAparicionX();
+void elegirCantPosiciones(int* pos);
+void cargarVector(int* vec, const int* pos, int* cantElem);
+void mostrarVector(int* vec, const int* pos, const int*);
+int consultaVecLleno(const int* pos, const int* cantElem);
+void desplazarIzqDH(int* vec, int* desde, int* hasta);
+void desplazarDerDH(int* vec, int* desde, int* hasta);
+
+void insertarEnPos(int* vec, const int* pos, int* cantElem,  int*,  int*);
+void insertarEnOrden(int* vec, const int* pos, int* cantElem, int*);
+void eliminarEnPos(int* vec, const int* pos, int* cantElem,  int*);
+void eliminarPrimerAparicionX(int* vec, int* tam, int* cantElem,  int* elem);
 void eliminarTodosLosX();
 
 
