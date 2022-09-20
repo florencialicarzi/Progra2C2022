@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1663618829 source:c:\users\flore\onedrive\documentos\facultad\2do a—o\programacion\3ra cursada\clasescode\merge\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Merge.h"
+
+1663618067 c:\users\flore\onedrive\documentos\facultad\2do a—o\programacion\3ra cursada\clasescode\merge\merge.h
+
+1663618361 source:c:\users\flore\onedrive\documentos\facultad\2do a—o\programacion\3ra cursada\clasescode\merge\merge.c
+	<stdio.h>
+	<string.h>
+	"Merge.h"
+

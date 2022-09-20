@@ -1,0 +1,25 @@
+//PARA VECTORES DE INT
+//void ordenarSel(int* vec, int ce) //[3,8,1,4,2] ce=5
+//{
+//    int* ult= vec+ce-1;
+//    int* menor;
+//    for(int* i=vec;i<ult;i++) //Al ser el tipo de puntero int, sabe que tiene que correr 4bytes
+//    {
+//        menor=buscarMenor(i,ult);
+//        if(menor!= i)//las direcciones de memoria son diferentes
+//            intercambiar(m,i);
+
+//    }
+//}
+//
+//int* buscarMenor(int* ini, int*fin)
+//{
+//    int* menor=ini;
+//    for(int* i=ini+1;i<fin;i++)
+//        if(*i<*menor)
+//            menor=i; //intercambio las direcciones
+//
+//
+//    return menor;
+//}
+//////////////////////////////////////////////////////////////////////

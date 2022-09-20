@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1662384208 source:c:\users\flore\downloads\progra2c2022-main\progra2c2022-main\tcpcode\cadenas\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Cadenas.h"
+
+1662384285 source:c:\users\flore\downloads\progra2c2022-main\progra2c2022-main\tcpcode\cadenas\cadenas.c
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	<stdbool.h>
+	"Cadenas.h"
+
+1662384225 c:\users\flore\downloads\progra2c2022-main\progra2c2022-main\tcpcode\cadenas\cadenas.h
+	<stdbool.h>
+
+1662389352 source:c:\users\flore\downloads\progra2c2022-main\progra2c2022-main\clasescode\cadenas\cadenas.c
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	<stdbool.h>
+	"Cadenas.h"
+
+1662389085 c:\users\flore\downloads\progra2c2022-main\progra2c2022-main\clasescode\cadenas\cadenas.h
+	<stdbool.h>
+
+1662387178 source:c:\users\flore\downloads\progra2c2022-main\progra2c2022-main\clasescode\cadenas\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Cadenas.h"
+

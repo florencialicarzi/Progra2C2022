@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1662989573 source:c:\users\flore\onedrive\documentos\facultad\2do a—o\programacion\3ra cursada\clasescode\punteroafuncion\main.c
+	<stdio.h>
+	<stdlib.h>
+	"FuncionAPuntero.h"
+
+1662992442 c:\users\flore\onedrive\documentos\facultad\2do a—o\programacion\3ra cursada\clasescode\punteroafuncion\funcionapuntero.h
+
+1662992375 source:c:\users\flore\onedrive\documentos\facultad\2do a—o\programacion\3ra cursada\clasescode\punteroafuncion\funcionapuntero.c
+	<stdio.h>
+	<string.h>
+	"FuncionAPuntero.h"
+
