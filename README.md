@@ -1,10 +1,10 @@
 CLASESCODE
   - Proyectos ConsoleApplication en C
   - Contienen Main.c / desarrollo.c / desarrollo.h
-  - Si comienzan con CX_ entonces es un apunte de clase.
+  - Si comienzan con TX_ entonces es un apunte de clase, el resto son adicionales.
   
  TCPCODE
-  - Todos los programitas del TCP, easy
+  - Todos los programitas que tengo del TCP, easy
   
  LIBRERIAS
   - Proyectos de StaticLibrary en C
