@@ -3,6 +3,7 @@
 
 #define ERR_ARCHIVO 1
 #define TODO_OK 0
+#define CANT_PRODS 10
 
 typedef struct
 {
