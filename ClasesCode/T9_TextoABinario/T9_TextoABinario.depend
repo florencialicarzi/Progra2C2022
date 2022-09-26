@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1664200364 source:c:\users\flore\onedrive\escritorio\progra2c2022\clasescode\t9_textoabinario\main.c
+	<stdio.h>
+	<stdlib.h>
+	"TextoABinario.h"
+
+1664202389 source:c:\users\flore\onedrive\escritorio\progra2c2022\clasescode\t9_textoabinario\textoabinario.c
+	<stdio.h>
+	<stdbool.h>
+	<string.h>
+	"TextoABinario.h"
+
+1664201491 c:\users\flore\onedrive\escritorio\progra2c2022\clasescode\t9_textoabinario\textoabinario.h
+
