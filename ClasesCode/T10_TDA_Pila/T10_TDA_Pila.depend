@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1664454775 source:c:\users\florencia\documents\facultad\2do\programacion\3racursada\clasescode\t10_tda_pila\main.c
+	<stdio.h>
+	<stdlib.h>
+	"TDA_Pila.h"
+
+1664458899 c:\users\florencia\documents\facultad\2do\programacion\3racursada\clasescode\t10_tda_pila\tda_pila.h
+	<stdbool.h>
+
