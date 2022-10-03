@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1664635773 source:c:\users\flore\onedrive\escritorio\progra2c2022\tcpcode\loom_stockitem\main.cpp
+	<iostream>
+	"Stockitem.h"
+
+1664635762 c:\users\flore\onedrive\escritorio\progra2c2022\tcpcode\loom_stockitem\include\stockitem.h
+
+1664635831 source:c:\users\flore\onedrive\escritorio\progra2c2022\tcpcode\loom_stockitem\src\stockitem.cpp
+	<iostream>
+	"Stockitem.h"
+
