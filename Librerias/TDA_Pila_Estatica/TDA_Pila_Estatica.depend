@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1664807879 source:c:\users\flore\onedrive\escritorio\progra2c2022\librerias\tda_pila_estatica\tda_pila_estatica.c
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+	"TDA_Pila_Estatica.h"
+
+1664807939 c:\users\flore\onedrive\escritorio\progra2c2022\librerias\tda_pila_estatica\tda_pila_estatica.h
+	<stdbool.h>
+
