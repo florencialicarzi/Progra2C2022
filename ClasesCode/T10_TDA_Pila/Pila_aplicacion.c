@@ -2,7 +2,9 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <string.h>
+//define PILA_EST o PILA_DIN
 #include "TDA_Pila.h"
+
 
 char* sumar(const char* num1, const char* num2)
 {

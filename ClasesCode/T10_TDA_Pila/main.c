@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+//define PILA_EST o PILA_DIN
 #include "TDA_Pila.h"
 
 //Sumar 9947389 57267

@@ -3,14 +3,28 @@
 
 #include <stdbool.h>
 
-typedef int Pila;
+/* #ifdef PILA_EST
+    #include TDAPilaEstatica.h
+   #endif
+   #ifdef PILA_DIN
+    #include TDAPilaDinamica.h
+   #endif
+*/
+
+//pila estatica
+typedef struct
+{
+    char vPila[TAM_PILA];
+    unsigned tope;
+}Pila;
+
 
 void crearPila(Pila* pila);
-bool apilar(Pila* pila, void* elem, size_t tamElem); //Bool que me diga si pudo apilar
+bool apilar(Pila* pila,const void* elem, size_t tamElem); //Bool que me diga si pudo apilar
 bool desapilar(Pila* pila, void* elem, size_t tamElem);
 bool verTopeDePila(const Pila* pila, void* elem, size_t tamElem);
 bool pilaVacia(const Pila* pila);
-bool pilaLlena(const Pila* pila);
+bool pilaLlena(const Pila* pila, size_t tamElem);
 void vaciarPila(Pila* pila);
 
 char* sumar(const char* num1, const char* num2);
