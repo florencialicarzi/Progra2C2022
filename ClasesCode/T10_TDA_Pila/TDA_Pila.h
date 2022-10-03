@@ -1,8 +1,8 @@
 #ifndef TDA_PILA_H_INCLUDED
 #define TDA_PILA_H_INCLUDED
-
+#define min(x,y) (((x) < (y)) ? (x) : (y))
 #include <stdbool.h>
-
+#define TAM_PILA 42
 /* #ifdef PILA_EST
     #include TDAPilaEstatica.h
    #endif

@@ -25,7 +25,7 @@ bool apilar(Pila* pp,const void* elem, size_t tamElem)
 
 bool desapilar(Pila* pp, void* elem, size_t tamElem)
 {
-    if(tope==0)
+    if(pp->tope==0)
         return false;
 
     //leo el tamaño del ultimo elemento;
@@ -40,11 +40,11 @@ bool desapilar(Pila* pp, void* elem, size_t tamElem)
 bool verTopeDePila(const Pila* pp, void* elem, size_t tamElem)
 {
     if(pp->tope==0)
-        return false
+        return false;
     unsigned tope= pp->tope;
     tope-=sizeof(size_t);
-    size_t tamElemSpilado=*(size_t*)(pp->vPila+tope);
-    tope-=tamElemSpilado;
+    size_t tamElemApilado=*(size_t*)(pp->vPila+tope);
+    tope-=tamElemApilado;
     memcpy(elem,pp->vPila+tope,min(tamElem,tamElemApilado));
     return true;
 }

@@ -7,3 +7,24 @@
 1664458899 c:\users\florencia\documents\facultad\2do\programacion\3racursada\clasescode\t10_tda_pila\tda_pila.h
 	<stdbool.h>
 
+1664801775 source:c:\users\flore\onedrive\escritorio\progra2c2022\clasescode\t10_tda_pila\main.c
+	<stdio.h>
+	<stdlib.h>
+	"TDA_Pila.h"
+
+1664807987 c:\users\flore\onedrive\escritorio\progra2c2022\clasescode\t10_tda_pila\tda_pila.h
+	<stdbool.h>
+
+1664801767 source:c:\users\flore\onedrive\escritorio\progra2c2022\clasescode\t10_tda_pila\pila_aplicacion.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<string.h>
+	"TDA_Pila.h"
+
+1664808131 source:c:\users\flore\onedrive\escritorio\progra2c2022\clasescode\t10_tda_pila\tda_pila.c
+	<stdio.h>
+	<stdbool.h>
+	<string.h>
+	"TDA_Pila.h"
+
