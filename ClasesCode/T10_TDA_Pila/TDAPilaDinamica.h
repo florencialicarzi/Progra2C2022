@@ -1,0 +1,8 @@
+#ifndef TDAPILADINAMICA_H_INCLUDED
+#define TDAPILADINAMICA_H_INCLUDED
+
+#include "Nodo.h"
+
+typedef Nodo* Pila;
+
+#endif // TDAPILADINAMICA_H_INCLUDED
