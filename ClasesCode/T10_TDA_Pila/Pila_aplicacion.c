@@ -3,7 +3,9 @@
 #include <stdbool.h>
 #include <string.h>
 //define PILA_EST o PILA_DIN
+#define PILA_DIN
 #include "TDA_Pila.h"
+#include "SumaNrosGrandes.h"
 
 
 char* sumar(const char* num1, const char* num2)

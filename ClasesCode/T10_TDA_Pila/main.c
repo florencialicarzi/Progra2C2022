@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 //define PILA_EST o PILA_DIN
+#define PILA_DIN
 #include "TDA_Pila.h"
+#include "SumaNrosGrandes.h"
 
 //Sumar 9947389 57267
 
