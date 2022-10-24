@@ -71,7 +71,55 @@ void ordenarListaPan(Lista* pl, Cmp cmp)
 }
 
 
-void ordenarListaRen(Lista* pl, Cmp cmp)
+int comparar(const void* dato1, const void* dato2)
+{
+    return *(int*)dato1 - *(int*)dato2;
+}
+
+Lista* buscarMenor(Lista* aux, Lista* menor, Cmp cmp)
 {
 
+    while((*aux)->sig) // Mientras haya siguiente, si hay uno solo esta ordenada.
+    {
+
+        if(cmp((*menor)->elem, (*aux)->sig->elem) > 0)
+            menor = &(*aux)->sig;
+
+        aux = &(*aux)->sig;
+
+    }
+
+    printf("\nMenor: %d", *(int*)(*menor)->elem);
+    return menor;
+}
+
+void ordenarListaSeleccion(Lista* pl, Cmp cmp)
+{
+
+    Lista* menor = pl;
+    Lista* aux = pl;
+
+    if(*pl == NULL)
+        return;
+
+
+    while((*pl)->sig) // Mientras haya siguiente, si hay uno solo esta ordenada.
+    {
+
+        menor = buscarMenor(aux, menor, cmp);
+
+        Nodo* pri = *menor;
+
+        *menor = pri->sig;
+
+        pri->sig = *pl;
+
+        *pl = pri;
+
+        pl = &(*pl)->sig;
+
+        menor = pl;
+        aux =pl;
+
+    }
 }
