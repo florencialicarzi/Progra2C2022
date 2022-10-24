@@ -46,10 +46,30 @@ bool desencolar(Cola* pc, void* elem, size_t tamElem)
 
     return true;
 }
-bool verTopeDeCola(const Cola* pc, void* elem, size_t tamElem);
-bool colaVacia(const Cola* pc);
-bool colaLlena(const Cola* pc);
-void vaciarCola(Cola* pc);
+bool verTopeDeCola(const Cola* pc, void* elem, size_t tamElem)
+{
+    if(pc->tamDisp==TAM_COLA)
+        return false;
+
+    size_t tamElemEncolado;
+    unsigned frente = pc->frente;
+    //Ver clase
+}
+
+bool colaVacia(const Cola* pc)
+{
+    return pc->tamDisp == TAM_COLA;
+}
+
+bool colaLlena(const Cola* pc, size_t tamElem)
+{
+    return (tamElem + sizeof(size_t)) > pc->tamDisp;
+}
+void vaciarCola(Cola* pc)
+{
+    pc->frente = pc->fondo = 0;
+    pc->tamDisp = TAM_COLA;
+}
 
 //
 void copiarDatoEnCola(Cola*pc, const void* dato, size_t tamDato)
