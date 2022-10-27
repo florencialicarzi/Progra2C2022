@@ -1,3 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "TDA_Lista.h"
+
+
+//CREAR LISTA
+void crearLista(Lista* pl)
+{
+    *pl= NULL;
+}
+
+//INSERTAR EN LISTA
+
 int insertarEnListaOrdSinDup(Lista *pl, const void*elem, size_t tamElem, Cmp cmp, Actualizar actualizar)
 {
     while(*pl&&(cmp(elem,(*pl)->elem))>0) //cuidao segmentation fault
@@ -9,16 +23,60 @@ int insertarEnListaOrdSinDup(Lista *pl, const void*elem, size_t tamElem, Cmp cmp
         return DUPLICADO;
     }
 
-    Nodo* nue= crearNodo(elem, tamElem);
-    if(!nue)
-        return SIN_MEM;
+     Nodo* nue= malloc(sizeof(Nodo));
+    void* elemNodo= malloc(tamElem);
 
+    if(nue == NULL || elemNodo==NULL)
+    {
+        free(elemNodo);
+        free(nue);
+        return SIN_MEM;
+    }
+
+    memcpy(elemNodo, elem, tamElem);
+
+    nue->elem= elemNodo;
+    nue->tamElem= tamElem;
     nue->sig= *pl;
     *pl=nue;
 
     return TODO_OK;
 }
 
+int insertarListaOrdDup(Lista* pl, const void* elem, size_t tamElem, Cmp cmp)
+{
+    while(*pl&&(cmp(elem,(*pl)->elem))>0)
+        pl= &(*pl)->sig;
+
+    Nodo* nue= malloc(sizeof(Nodo));
+    void* elemNodo= malloc(tamElem);
+
+    if(nue == NULL || elemNodo==NULL)
+    {
+        free(elemNodo);
+        free(nue);
+        return SIN_MEM;
+    }
+
+    memcpy(elemNodo, elem, tamElem);
+
+    nue->elem= elemNodo;
+    nue->tamElem= tamElem;
+    nue->sig= *pl;
+    *pl=nue;
+
+    return TODO_OK;
+}
+
+//int insertarListaDesordSinDup(Lista*, const void*, size_t , Cmp , Actualizar )
+//int insertarListaDesordDup(Lista*, const void*, size_t , Cmp , Actualizar );
+//int insertarEnPosSinDup(Lista*,int,const void*, size_t, Cmp, Actualizar);
+//int insertarEnPosDup(Lista*,int,const void*, size_t, Cmp, Actualizar);
+//int insertarInicio(Lista*, const void*, size_t);
+//int insertarFinal(Lista*, const void*, size_t);
+
+
+//ELIMINAR DE LISTA
 int eliminarDeListaOrdXValor(Lista* pl, void* elem, size_t tamElem, Cmp cmp) //elem me trae el dato pero ahi devuelvo el nodo
 {
     if(!*pl)
@@ -33,66 +91,31 @@ int eliminarDeListaOrdXValor(Lista* pl, void* elem, size_t tamElem, Cmp cmp) //e
     Nodo* nae = *pl;
     *pl= nae->sig;
 
-    destruirNodo(nae,elem,tamElem);
-    return TODO_OK
+    memcpy(elem, nae->elem, min(tamElem, nae->tamElem));
+    free(nae->elem);
+    free(nae);
+    return TODO_OK;
 }
+//int eliminarDeListaEnPos(Lista* pl,int pos ,void* elem, size_t tamElem, Cmp cmp);
+//int eliminarPri(Lista* pl, void*elem, size_t tamElem);
+//int eliminarUlt(Lista* pl, void*elem, size_t tamElem);
 
-//Insertar en lista desordenada con/sin dup
-//Insertar en pos con/sin dup
-//Insertar inicio
-//Insertar final
-//eliminar en pos
-//eliminar primero
-//eliminar ultimo
-//buscar lista ordenada
-//buscar lista desordenada
-//Ordenar lista (con lista auxiliar con metodos)
-
-void ordenarListaPan(Lista* pl, Cmp cmp)
+//BUSCAR EN LISTA
+bool buscarEnListaOrd(Lista* pl, void* elem, size_t tamElem, Cmp cmp)
 {
-    Lista lOrd= NULL;
-    Lista* plOrd;
-    Nodo* nodo;
+    while(*pl && cmp(elem, (*pl)->elem) > 0)
+        pl = &(*pl)->sig;
 
-    while(*pl)
-    {
-        nodo=*pl;
-        *pl= nodo->sig;
-        plOrd= &plOrd;
+    if(!*pl || cmp(elem, (*pl)->elem) != 0)
+        return false;
 
-        while(*plOrd && cmp(nodo->elem, (*plOrd)->elem >0)
-              plOrd = &(*plOrd)->sig;
+    memcpy(elem, (*pl)->elem, min(tamElem, (*pl)->tamElem));
 
-        nodo->sig = *plOrd;
-        *plOrd=nodo;
-    }
-
-    *pl=lOrd;
+    return true;
 }
+//void buscarEnListaDesord(Lista*, void*, size_t);
 
-
-int comparar(const void* dato1, const void* dato2)
-{
-    return *(int*)dato1 - *(int*)dato2;
-}
-
-Lista* buscarMenor(Lista* aux, Lista* menor, Cmp cmp)
-{
-
-    while((*aux)->sig) // Mientras haya siguiente, si hay uno solo esta ordenada.
-    {
-
-        if(cmp((*menor)->elem, (*aux)->sig->elem) > 0)
-            menor = &(*aux)->sig;
-
-        aux = &(*aux)->sig;
-
-    }
-
-    printf("\nMenor: %d", *(int*)(*menor)->elem);
-    return menor;
-}
-
+//ORDENAR LISTA
 void ordenarListaSeleccion(Lista* pl, Cmp cmp)
 {
 
@@ -123,3 +146,90 @@ void ordenarListaSeleccion(Lista* pl, Cmp cmp)
 
     }
 }
+
+void ordenarListaInsercion(Lista* pl, Cmp cmp)
+{
+    Lista lOrd= NULL;
+    Lista* plOrd;
+    Nodo* nodo;
+
+    while(*pl)
+    {
+        nodo=*pl;
+        *pl= nodo->sig;
+        plOrd= &(*plOrd);
+
+        while(*plOrd && cmp(nodo->elem, (*plOrd)->elem) >0)
+              plOrd = &(*plOrd)->sig;
+
+        nodo->sig = *plOrd;
+        *plOrd=nodo;
+    }
+
+    *pl=lOrd;
+}
+
+//LISTA LLENA/VACIA
+bool listaLlena(Lista* pl, size_t tamElem)
+{
+    void* nue = malloc(sizeof(Nodo));
+    void* elemNodo = malloc(tamElem);
+
+    free(elemNodo);
+    free(nue);
+
+    return !nue || !elemNodo;
+}
+
+bool listaVacia(Lista* pl)
+{
+    return *pl == NULL;
+}
+
+//VACIAR LISTA
+void vaciarLista(Lista* pl)
+{
+    Nodo* nae;
+
+    while(*pl)
+    {
+        nae = *pl;
+
+        *pl = nae->sig;
+
+        free(nae->elem);
+        free(nae);
+    }
+}
+
+//MOSTRAR LISTA
+//void mostrarLista(Lista* pl, void (*mostrar)(const void* elem));
+//void mostrarEntero(const void* elem);
+
+
+
+//FUNCIONES AUXULIARES
+int comparar(const void* dato1, const void* dato2)
+{
+    return *(int*)dato1 - *(int*)dato2;
+}
+
+Lista* buscarMenor(Lista* aux, Lista* menor, Cmp cmp)
+{
+
+    while((*aux)->sig) // Mientras haya siguiente, si hay uno solo esta ordenada.
+    {
+
+        if(cmp((*menor)->elem, (*aux)->sig->elem) > 0)
+            menor = &(*aux)->sig;
+
+        aux = &(*aux)->sig;
+
+    }
+
+    printf("\nMenor: %d", *(int*)(*menor)->elem);
+    return menor;
+}
+
+
+

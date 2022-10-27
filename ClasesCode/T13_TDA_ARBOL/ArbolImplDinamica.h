@@ -1,0 +1,8 @@
+#ifndef ARBOLIMPLDINAMICA_H_INCLUDED
+#define ARBOLIMPLDINAMICA_H_INCLUDED
+
+#include "NodoA.h"
+
+typedef NodoA* Arbol;
+
+#endif // ARBOLIMPLDINAMICA_H_INCLUDED

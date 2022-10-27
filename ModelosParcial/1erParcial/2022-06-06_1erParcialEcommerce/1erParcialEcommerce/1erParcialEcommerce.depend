@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1654457352 source:c:\users\florencia\documents\facultad\2do\programacion\3racursada\modelosparcial\1erparcial\2022-06-06_1erparcialecommerce\1erparcialecommerce\main.c
+	<stdio.h>
+	"../Solucion1erParcialEcommerce/Solucion1erParcialEcommerce.h"
+
+1654456186 c:\users\florencia\documents\facultad\2do\programacion\3racursada\modelosparcial\1erparcial\2022-06-06_1erparcialecommerce\solucion1erparcialecommerce\solucion1erparcialecommerce.h
+	"../Comun/Comun.h"
+
+1653648806 c:\users\florencia\documents\facultad\2do\programacion\3racursada\modelosparcial\1erparcial\2022-06-06_1erparcialecommerce\comun\comun.h
+

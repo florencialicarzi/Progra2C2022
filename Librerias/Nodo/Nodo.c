@@ -1,3 +1,8 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "Nodo.h"
+
 Nodo* crearNodo(const void* elem, size_t tamElem)
 {
     Nodo* nue = malloc(sizeof(Nodo));
