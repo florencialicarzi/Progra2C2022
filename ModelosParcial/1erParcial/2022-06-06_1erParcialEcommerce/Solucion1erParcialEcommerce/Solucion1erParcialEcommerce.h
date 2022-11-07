@@ -3,7 +3,6 @@
 
 #include "../Comun/Comun.h"
 
-
 typedef struct
 {
     char usuario[21];

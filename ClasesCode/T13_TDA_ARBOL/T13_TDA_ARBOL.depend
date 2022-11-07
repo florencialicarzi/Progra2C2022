@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1666875587 source:c:\users\florencia\documents\facultad\2do\programacion\3racursada\clasescode\t13_tda_arbol\nodoa.c
+	<memory.h>
+	"NodoA.h"
+
+1667479455 c:\users\florencia\documents\facultad\2do\programacion\3racursada\clasescode\t13_tda_arbol\nodoa.h
+	"stdio.h"
+	"stdlib.h"
+
