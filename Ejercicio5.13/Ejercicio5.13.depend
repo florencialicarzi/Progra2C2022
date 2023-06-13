@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1686464293 source:c:\users\florencia\documents\facultad\plan 2023\2do_p23\topicosdeprogramacion\guiares\ejercicio5.13\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Ej5.13.h"
+
+1686462489 c:\users\florencia\documents\facultad\plan 2023\2do_p23\topicosdeprogramacion\guiares\ejercicio5.13\ej5.13.h
+
+1686462524 source:c:\users\florencia\documents\facultad\plan 2023\2do_p23\topicosdeprogramacion\guiares\ejercicio5.13\ej5.13.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"Ej5.13.h"
+

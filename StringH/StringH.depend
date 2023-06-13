@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1686374854 source:c:\users\florencia\documents\facultad\plan 2023\2do_p23\topicosdeprogramacion\guiares\stringh\main.c
+	<stdio.h>
+	<stdlib.h>
+	"string.h"
+	"StringH.h"
+
+1686374080 c:\users\florencia\documents\facultad\plan 2023\2do_p23\topicosdeprogramacion\guiares\stringh\stringh.h
+
+1686375069 source:c:\users\florencia\documents\facultad\plan 2023\2do_p23\topicosdeprogramacion\guiares\stringh\stringh.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"StringH.h"
+

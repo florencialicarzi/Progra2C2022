@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1686283047 source:c:\users\florencia\documents\facultad\plan 2023\2do_p23\topicosdeprogramacion\guiares\normalizarcadena\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Normalizar.h"
+
+1686279783 c:\users\florencia\documents\facultad\plan 2023\2do_p23\topicosdeprogramacion\guiares\normalizarcadena\normalizar.h
+
+1686286431 source:c:\users\florencia\documents\facultad\plan 2023\2do_p23\topicosdeprogramacion\guiares\normalizarcadena\normalizar.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"Normalizar.h"
+

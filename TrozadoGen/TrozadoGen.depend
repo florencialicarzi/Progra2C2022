@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1686342902 source:c:\users\florencia\documents\facultad\plan 2023\2do_p23\topicosdeprogramacion\guiares\trozadogen\main.c
+	<stdio.h>
+	<stdlib.h>
+	"TrozadoGen.h"
+
+1686343737 c:\users\florencia\documents\facultad\plan 2023\2do_p23\topicosdeprogramacion\guiares\trozadogen\trozadogen.h
+
+1686350867 source:c:\users\florencia\documents\facultad\plan 2023\2do_p23\topicosdeprogramacion\guiares\trozadogen\trozadogen.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"TrozadoGen.h"
+

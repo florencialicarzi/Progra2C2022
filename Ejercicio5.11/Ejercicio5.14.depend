@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1686205839 source:c:\users\florencia\documents\facultad\plan 2023\2do_p23\topicosdeprogramacion\guiares\ejercicio5.14\empalu.c
+	<stdio.h>
+	<stdlib.h>
+	"EmpAlu.h"
+	<string.h>
+
+1686194135 c:\users\florencia\documents\facultad\plan 2023\2do_p23\topicosdeprogramacion\guiares\ejercicio5.14\empalu.h
+
+1686193683 source:c:\users\florencia\documents\facultad\plan 2023\2do_p23\topicosdeprogramacion\guiares\ejercicio5.14\main.c
+	<stdio.h>
+	<stdlib.h>
+	"EmpAlu.h"
+
