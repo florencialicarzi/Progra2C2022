@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1686215306 source:c:\users\florencia\documents\facultad\plan 2023\2do_p23\topicosdeprogramacion\guiares\archivospractica\archivospractica.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArchivosPractica.h"
+
+1686215407 source:c:\users\florencia\documents\facultad\plan 2023\2do_p23\topicosdeprogramacion\guiares\archivospractica\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ArchivosPractica.h"
+
+1686215382 c:\users\florencia\documents\facultad\plan 2023\2do_p23\topicosdeprogramacion\guiares\archivospractica\archivospractica.h
+
