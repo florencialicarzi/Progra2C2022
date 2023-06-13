@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1680640595 source:c:\users\laboratorios\desktop\nueva carpeta (10)\vectores\main.c
+	<stdio.h>
+	<stdlib.h>
+	"utiles.h"
+	"vectorEnteros.h"
+
+1680637791 c:\users\laboratorios\desktop\nueva carpeta (10)\vectores\utiles.h
+
+1680637799 c:\users\laboratorios\desktop\nueva carpeta (10)\vectores\vectorenteros.h
+
+1680637776 source:c:\users\laboratorios\desktop\nueva carpeta (10)\vectores\utiles.c
+
+1680641060 source:c:\users\laboratorios\desktop\nueva carpeta (10)\vectores\vectorenteros.c
+	<stdio.h>
+	<stdlib.h>
+
+1680637776 source:c:\users\florencia\documents\facultad\plan 2023\2do_p23\topicosdeprogramacion\guiares\vectores\utiles.c
+
+1681071741 source:c:\users\florencia\documents\facultad\plan 2023\2do_p23\topicosdeprogramacion\guiares\vectores\vectorenteros.c
+	<stdio.h>
+	<stdlib.h>
+
+1681072784 source:c:\users\florencia\documents\facultad\plan 2023\2do_p23\topicosdeprogramacion\guiares\vectores\main.c
+	<stdio.h>
+	<stdlib.h>
+	"utiles.h"
+	"vectorEnteros.h"
+
+1680637791 c:\users\florencia\documents\facultad\plan 2023\2do_p23\topicosdeprogramacion\guiares\vectores\utiles.h
+
+1681071884 c:\users\florencia\documents\facultad\plan 2023\2do_p23\topicosdeprogramacion\guiares\vectores\vectorenteros.h
+
+1680652677 c:\users\florencia\documents\facultad\plan 2023\2do_p23\topicosdeprogramacion\guiares\vectores\menu.h
+
+1680652639 source:c:\users\florencia\documents\facultad\plan 2023\2do_p23\topicosdeprogramacion\guiares\vectores\menu.c
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	"Menu.h"
+
